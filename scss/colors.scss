@@ -180,3 +180,15 @@
   box-shadow: none;
   border-color: var(--primary-300);
 }
+//
+
+#main-outlet-wrapper .sidebar-container {
+  background-color: var(--primary) !important;
+}
+
+#main-outlet-wrapper {
+  background-color: var(--primary);
+  .boxed.white {
+    background-color: var(--primary);
+  }
+}
