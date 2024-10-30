@@ -32,8 +32,11 @@ html.discourse-no-touch {
 
 .discourse-touch {
   .sidebar-custom-sections {
-    .active:hover {
+    a:hover {
       background: var(--sidebar-hover) !important;
+    }
+    .active:hover {
+      background: var(--tertiary) !important;
     }
   }
 }
