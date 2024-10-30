@@ -33,7 +33,7 @@ html.discourse-no-touch {
 .discourse-touch {
   .sidebar-custom-sections {
     a:hover {
-      background: inherit !important;
+      background: var(--tertiary) !important;
     }
   }
 }
