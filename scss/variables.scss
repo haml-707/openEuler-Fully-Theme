@@ -1,8 +1,7 @@
 :root {
-  --sidebar-color:var(--secondary);
+  --sidebar-color:var((--header_background));
   --sidebar-hover: var(--primary-200);
   --bright-text: var(--primary);
-  --sidebar-bg: var(--primary);
   --active-text: #ffffff;
   --dimmed-text: var(--primary-800);
   --sidebar-border: var(--primary-200);
