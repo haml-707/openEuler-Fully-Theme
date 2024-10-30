@@ -2,7 +2,11 @@
   "license_url": null,
   "components": [
     "https://github.com/discourse/discourse-full-width-component.git",
-    "https://github.com/discourse/discourse-color-scheme-toggle.git"
+    "https://github.com/discourse/discourse-color-scheme-toggle.git",
+    "https://github.com/discourse/new-like-icon",
+    "https://github.com/discourse/discourse-color-scheme-toggle",
+    "https://github.com/naidihr/discourse-category-banner-boxes",
+    ""
   ],
   "name": "Fully Theme",
   "color_schemes": {
