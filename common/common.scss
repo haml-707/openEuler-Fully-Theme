@@ -32,12 +32,8 @@ html.discourse-no-touch {
 
 .discourse-touch {
   .sidebar-custom-sections {
-    a:hover {
-      .sidebar-section-link-prefix {
-        color: #ffffff;
-      }
-      color: #ffffff;
-      background: var(--tertiary) !important;
+    .active:hover {
+      background: var(--sidebar-hover) !important;
     }
   }
 }
