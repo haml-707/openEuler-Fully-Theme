@@ -3,12 +3,11 @@
   "components": [
     "https://github.com/discourse/discourse-full-width-component.git",
     "https://github.com/discourse/discourse-color-scheme-toggle.git",
-    "https://github.com/discourse/new-like-icon",
-    "https://github.com/discourse/discourse-color-scheme-toggle",
-    "https://github.com/naidihr/discourse-category-banner-boxes",
-    ""
+    "https://github.com/discourse/new-like-icon.git",
+    "https://github.com/naidihr/discourse-category-banner-boxes.git",
+    "https://github.com/jlcoo/header-locale-selector.git"
   ],
-  "name": "Fully Theme",
+  "name": "openEuler Fully Theme",
   "color_schemes": {
     "openEuler-light": {
       "primary": "000000",
@@ -18,11 +17,11 @@
       "header_background": "ffffff",
       "header_primary": "333333",
       "highlight": "e5e8f0",
-      "selected": "d1f0ff",
-      "hover": "f2f2f2",
       "danger": "f3524d",
       "success": "6dc335",
-      "love": "002fa7"
+      "love": "002fa7",
+      "selected": "d1f0ff",
+      "hover": "f2f2f2"
     }
   }
 }
