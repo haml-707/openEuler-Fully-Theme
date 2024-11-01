@@ -27,3 +27,11 @@
 .full-page-chat .chat-full-page-header {
   border-top: none;
 }
+
+//---------------------------
+.has-sidebar-page .d-header > .wrap .contents {
+  grid-template-columns: calc(var(--d-sidebar-width) - 11px) 1fr minmax(
+      0,
+      calc(var(--d-max-width))
+    ) 1fr minmax(300px, calc(var(--d-sidebar-width) - 11px));
+}
