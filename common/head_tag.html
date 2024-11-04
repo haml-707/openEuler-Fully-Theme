@@ -1,11 +1,5 @@
 <script type="text/discourse-plugin" version="0.8">
 console.log(api);
 // 头部双logo
-api.decorateWidget('home-logo:after', helper => {
-    return helper.h('a.openeuler-logo', { href: 'https://www.openeuler.org/zh/', target: '_blank' },
-        helper.h('img', {
-            src: 'https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/euler-logo.png',
-        }),
-    );
-});
+api.registerValueTransformer("home-logo-href", () => "https://example.com");
 </script>
