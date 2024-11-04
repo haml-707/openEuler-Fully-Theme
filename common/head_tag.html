@@ -1,5 +1,8 @@
 <script type="text/discourse-plugin" version="0.8">
-console.log(api);
-// 头部双logo
-api.registerValueTransformer("home-logo-href", () => "https://example.com");
+api.headerButtons(“button-name”, <template>
+
+      <a href="https://www.openeuler.org/zh/">
+        <img src="https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/euler-logo.png"/>
+      </a>
+</template>, { after: “auth” })
 </script>
