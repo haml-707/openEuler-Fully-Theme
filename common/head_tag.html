@@ -1,7 +1,14 @@
-<script type="text/discourse-plugin" version="0.8">
-api.headerButtons(“button-name”, <template>
-      <a href="https://www.openeuler.org/zh/">
-        <img src="https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/euler-logo.png"/>
-      </a>
-</template>, { after: “auth” })
+<script type="text/discourse-plugin" version="1.0">
+      import DButton from "discourse/components/d-button";
+import { apiInitializer } from "discourse/lib/api";
+import DMenu from "float-kit/components/d-menu";
+  api.headerIcons.add("some-unique-name", <template>
+    <li>
+      <DMenu class="icon btn-flat" @icon="address-book">
+        <DButton @translatedLabel="User 1" @href="/u/user1" />
+        <DButton @translatedLabel="User 2" @href="/u/user2" />
+        <DButton @translatedLabel="User 3" @href="/u/user3" />
+      </DMenu>
+    </li>
+  </template>);
 </script>
