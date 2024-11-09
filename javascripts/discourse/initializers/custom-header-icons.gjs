@@ -4,7 +4,7 @@ export default apiInitializer("1.34.0", (api) => {
     <template>
       <li>
         <a id="graduation-cap" class="icon" href="https://example.com/" title="Learning Center">
-          {{dIcon "graduation-cap"}}
+  1112323
         </a>
       </li>
     </template>,
