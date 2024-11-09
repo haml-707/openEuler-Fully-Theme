@@ -3,14 +3,19 @@ import { apiInitializer } from "discourse/lib/api";
 import dIcon from "discourse-common/helpers/d-icon";
 
 export default apiInitializer("1.34.0", (api) => {
-  api.renderInOutlet("home-logo-contents",
-    <template>
-      <li>
-        <a id="graduation-cap" class="icon" href="https://example.com/" title="Learning Center">
-      1123
-        </a>
-      </li>
-    </template>,
-    { after: "home-logo" }
-  );
+
+  const logoSmallUrl = settings.Alternative_small_logo_url || "";
+  const logoUrl = settings.Alternative_logo_url || "";
+  const mobileLogoUrl = settings.Alternative_mobile_logo_url || "";
+
+  api.renderInOutlet("home-logo-contents", <template>
+    <HomeLogoContents
+      @logoSmallUrl={{logoSmallUrl}}
+      @logoUrl={{logoUrl}}
+      @minimized={{@outletArgs.minimized}}
+      @mobileLogoUrl={{mobileLogoUrl}}
+      @showMobileLogo={{@outletArgs.showMobileLogo}}
+      @title={{@outletArgs.title}}
+    />
+  </template>);
 });
