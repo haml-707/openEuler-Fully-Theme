@@ -12,6 +12,6 @@ export default apiInitializer("1.34.0", (api) => {
         </a>
       </li>
     </template>,
-    { after: "logo" }
+    { after: "home-logo" }
   );
 });
