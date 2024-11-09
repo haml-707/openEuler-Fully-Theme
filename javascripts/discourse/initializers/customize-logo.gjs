@@ -18,6 +18,7 @@ export default apiInitializer("1.34.0", (api) => {
       @title={{@outletArgs.title}}
     />
     <a href="https://www.openeuler.org/zh/"  target="_blank">
+    11123
       <img src="https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/euler-logo.png"/>
     </a>
   </template>);
