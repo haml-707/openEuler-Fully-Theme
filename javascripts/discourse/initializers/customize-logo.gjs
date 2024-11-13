@@ -22,12 +22,18 @@ export default apiInitializer("1.34.0", (api) => {
 
   // 监听storage事件，当localStorage发生变化时触发
   window.addEventListener("storage", function (event) {
+    console.log(event);
     if (event.key === "discourse_color_scheme_override") {
       handleColorSchemeChange();
     }
   });
   const language = document.documentElement.lang;
-  console.log(language);
+  let href = "";
+  if (language.includes("zh")) {
+    href = `https://www.openeuler.org/zh/`;
+  } else {
+    href = `https://www.openeuler.org/en/`;
+  }
   api.renderInOutlet("home-logo-contents", <template>
     <a class="forum-logo" href="/">
       <img
@@ -35,11 +41,7 @@ export default apiInitializer("1.34.0", (api) => {
       />
     </a>
     <span class="divid"></span>
-    <a
-      class="openeuler-logo"
-      href="https://www.openeuler.org/zh/"
-      target="_blank"
-    >
+    <a class="openeuler-logo" href={{href}} target="_blank">
       <img
         src="https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/openeuler.png"
       />
