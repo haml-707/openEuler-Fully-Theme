@@ -85,19 +85,24 @@
     }
   }
 }
-
-html[lang="en"].openeuler-logo.lang-en {
-  display: block; /* 或者根据你想要的初始显示效果设置为其他值，比如inline、flex等，这里假设是块级元素显示 */
+html[lang="zh-CH"] {
+  .home-logo-wrapper-outlet {
+    .lang-en {
+      display: none;
+    }
+    .lang-zh {
+      display: block;
+    }
+  }
 }
 
-html:not([lang="en"]).openeuler-logo.lang-en {
-  display: none;
-}
-
-html[lang="zh-CH"] .openeuler-logo.lang-zh {
-  display: block; /* 或者根据你想要的初始显示效果设置为其他值，比如inline、flex等，这里假设是块级元素显示 */
-}
-
-html:not([lang="zh-CN"]) .openeuler-logo.lang-zh {
-  display: none;
+html[lang="zh-CH"] {
+  .home-logo-wrapper-outlet {
+    .lang-en {
+      display: block;
+    }
+    .lang-zh {
+      display: none;
+    }
+  }
 }
