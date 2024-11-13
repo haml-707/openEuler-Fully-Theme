@@ -11,7 +11,7 @@ export default apiInitializer("1.34.0", (api) => {
         src="https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/forum.png"
       />
     </a>
-    <div class="divid">1</div>
+    <span class="divid"></span>
     <a
       class="openeuler-logo"
       href="https://www.openeuler.org/zh/"
