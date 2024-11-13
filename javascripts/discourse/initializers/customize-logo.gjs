@@ -5,15 +5,21 @@ export default apiInitializer("1.34.0", (api) => {
   // const logoUrl = settings.Alternative_logo_url || "";
   // const mobileLogoUrl = settings.Alternative_mobile_logo_url || "";
 
-  api.renderInOutlet(
-    "home-logo-contents",
-    <template>
-      <a class="forum-logo" href="/">
-        <img src="https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/forum.png" />
-      </a>
-      <a class="openeuler-logo" href="https://www.openeuler.org/zh/" target="_blank">
-        <img src="https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/openeuler.png" />
-      </a>
-    </template>
-  );
+  api.renderInOutlet("home-logo-contents", <template>
+    <a class="forum-logo" href="/">
+      <img
+        src="https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/forum.png"
+      />
+    </a>
+    <div class="divid"></div>
+    <a
+      class="openeuler-logo"
+      href="https://www.openeuler.org/zh/"
+      target="_blank"
+    >
+      <img
+        src="https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/openeuler.png"
+      />
+    </a>
+  </template>);
 });

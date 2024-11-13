@@ -40,3 +40,27 @@ html.discourse-no-touch {
     }
   }
 }
+
+.home-logo-wrapper-outlet {
+  .title {
+    & > a {
+      display: flex;
+      align-items: center;
+    }
+    .forum-logo {
+      height: 27px;
+    }
+    .openeuler-logo {
+      height: 18px;
+    }
+    .divid {
+      margin: 0 12px;
+      width: 1px;
+      height: 16px;
+      background-color: var(--primary);
+    }
+    img {
+      height: 100%;
+    }
+  }
+}
