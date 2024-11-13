@@ -46,11 +46,17 @@
         display: flex;
         align-items: center;
       }
+      a {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
       .forum-logo {
         height: 27px;
+        background-image: url(https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/forum.png);
       }
       .openeuler-logo {
         height: 18px;
+        background-image: url(https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/openeuler.png);
       }
       .divid {
         margin: 0 12px;
@@ -63,4 +69,33 @@
       }
     }
   }
+}
+
+.dark {
+  .d-header {
+    .home-logo-wrapper-outlet {
+      .forum-logo {
+        background-image: url(https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/forum_dark.png);
+      }
+      .openeuler-logo {
+        background-image: url(https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/openeuler_dark.png);
+      }
+    }
+  }
+}
+
+html[lang="en"].openeuler-logo.lang-en {
+  display: block; /* 或者根据你想要的初始显示效果设置为其他值，比如inline、flex等，这里假设是块级元素显示 */
+}
+
+html:not([lang="en"]).openeuler-logo.lang-en {
+  display: none;
+}
+
+html[lang="zh-CH"] .openeuler-logo.lang-zh {
+  display: block; /* 或者根据你想要的初始显示效果设置为其他值，比如inline、flex等，这里假设是块级元素显示 */
+}
+
+html:not([lang="zh-CN"]) .openeuler-logo.lang-zh {
+  display: none;
 }
