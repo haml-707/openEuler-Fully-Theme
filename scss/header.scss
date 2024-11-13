@@ -35,30 +35,32 @@
     1fr minmax(300px, calc(var(--d-sidebar-width) - 11px));
 }
 
-.home-logo-wrapper-outlet {
-  margin-left: 3em;
-  @media screen and (max-width: 760px) {
-    margin: 0;
-  }
-  .title {
-    & > a {
-      display: flex;
-      align-items: center;
+.d-header {
+  .home-logo-wrapper-outlet {
+    margin-left: 3em;
+    @media screen and (max-width: 760px) {
+      margin: 0;
     }
-    .forum-logo {
-      height: 27px;
-    }
-    .openeuler-logo {
-      height: 18px;
-    }
-    .divid {
-      margin: 0 12px;
-      width: 1px;
-      height: 16px;
-      background-color: var(--primary);
-    }
-    img {
-      height: 100%;
+    .title {
+      & > a {
+        display: flex;
+        align-items: center;
+      }
+      .forum-logo {
+        height: 27px;
+      }
+      .openeuler-logo {
+        height: 18px;
+      }
+      .divid {
+        margin: 0 12px;
+        width: 1px;
+        height: 16px;
+        background-color: var(--primary);
+      }
+      img {
+        height: 100%;
+      }
     }
   }
 }
