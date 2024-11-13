@@ -4,6 +4,7 @@ export default apiInitializer("1.34.0", (api) => {
   // const logoSmallUrl = settings.Alternative_small_logo_url || "";
   // const logoUrl = settings.Alternative_logo_url || "";
   // const mobileLogoUrl = settings.Alternative_mobile_logo_url || "";
+  console.log(api);
   let colorSchemeOverride = localStorage.getItem(
     "discourse_color_scheme_override"
   );
