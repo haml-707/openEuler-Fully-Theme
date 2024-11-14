@@ -50,10 +50,22 @@
         background-repeat: no-repeat;
         background-size: 100% 100%;
       }
-      .forum-logo {
+      .pc-logo {
         width: 86px;
         height: 27px;
         background-image: url(https://openeuler-website-beijing.obs.cn-north-4.myhuaweicloud.com/detail-banner/forum.png);
+        @media screen and (max-width: 1000px) {
+          display: none;
+        }
+      }
+      .mo-logo {
+        display: none;
+        width: 27x;
+        height: 27px;
+        background-image: url(https://forum.openeuler.org/uploads/default/original/1X/807e57835b97b8180921b7dd93e3d4530c446d17.png);
+        @media screen and (max-width: 1000px) {
+          display: block;
+        }
       }
       .openeuler-logo {
         margin-top: 3px;
