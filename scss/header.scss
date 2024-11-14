@@ -35,6 +35,13 @@
     1fr minmax(300px, calc(var(--d-sidebar-width) - 11px));
 }
 
+.d-header > .wrap .contents {
+  grid-template-columns: minmax(auto, 1fr) auto minmax(
+      0,
+      calc(var(--d-max-width))
+    ) auto minmax(260px, 1fr);
+}
+
 .d-header {
   .home-logo-wrapper-outlet {
     margin-left: 3em;
