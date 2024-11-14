@@ -36,16 +36,20 @@
 }
 
 .d-header > .wrap .contents {
-  grid-template-columns: minmax(auto, 1fr) auto minmax(
-      0,
-      calc(var(--d-max-width))
-    ) auto minmax(260px, 1fr);
+  grid-template-columns:
+    minmax(auto, 1fr) auto minmax(0, calc(var(--d-max-width)))
+    auto minmax(260px, 1fr);
+  @media screen and (max-width: 1000px) {
+    grid-template-columns:
+      minmax(auto, 1fr) auto minmax(0, calc(var(--d-max-width)))
+      auto minmax(auto, 1fr);
+  }
 }
 
 .d-header {
   .home-logo-wrapper-outlet {
     margin-left: 3em;
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 1000px) {
       margin: 0;
     }
     .title {
